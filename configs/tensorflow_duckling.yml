@@ -1,0 +1,12 @@
+language: "pt"
+
+pipeline: 
+- name: "tokenizer_whitespace"
+- name: "ner_crf"
+- name: "ner_synonyms"
+- name: "intent_featurizer_count_vectors"
+- name: "intent_classifier_tensorflow_embedding"
+- name: "ner_duckling_http"
+  dimensions: ["time", "number"]
+  locale: "pt_BR"
+  url: "http://0.0.0.0:8000"
