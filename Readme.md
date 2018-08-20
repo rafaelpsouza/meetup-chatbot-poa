@@ -20,11 +20,11 @@
 
 ## Servidor HTTP
 
-``` python -m rasa_nlu.server --path models ```
+``` python -m rasa_nlu.server --path projects ```
 
 ## Exemplos
 
-``` curl 'localhost:5000/parse?q=rafael&project=restaurantes' | jq ```
+``` curl 'localhost:5000/parse?q=oi&project=restaurantes' | jq ```
 
 ``` curl -G "localhost:5000/parse?project=restaurantes" --data-urlencode "q=quero fazer uma reserva" | jq ```
 
